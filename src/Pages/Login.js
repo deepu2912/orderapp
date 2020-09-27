@@ -1,21 +1,36 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom';
+// import { Route } from 'react-router-dom';
+// import Restuarant from './Restuarant';
 // import { Redirect } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 
 export default class Login extends Component {
-constructor(props){
-    super(); 
-    let prefix = window.location.host.startsWith("http") ? "" : "http://";
-    //using host here, as I'm redirecting to another location on the same host
-    this.target = prefix + window.location.host + '/restuarant';
-}
-    saveuserData=(e)=>{
-        e.preventDefault()
-        alert(this.target)
-        window.location.replace(this.target);
+    constructor(props) {
+        super();
+        let prefix = window.location.host.startsWith("http") ? "" : "http://";
+        //using host here, as I'm redirecting to another location on the same host
+        this.target = prefix + window.location.host + '/restuarant';
+
     }
 
-    render() {
+    state = {
+        login: false
+    }
+    saveuserData = (e) => {
+        e.preventDefault()
+        
+        this.setState({
+            login: true
+        })
+    }
+
+    render() { 
+        debugger
+       
+        if (this.state.login) {
+          return <Redirect to='/restuarant'/>;
+        }
         return (
             <>
                 <div className="login-page vh-100">
@@ -41,9 +56,9 @@ constructor(props){
                                 <input type="email" placeholder="Enter Email" className="form-control" id="InputEmail" aria-describedby="emailHelp" />
                             </div>
                             <button onClick={this.saveuserData} className="btn btn-primary btn-lg btn-block">
-                                SIGN IN 
-                            </button> 
-                        </form> 
+                                SIGN IN
+                            </button>
+                        </form>
                     </div>
                     <div className="fixed-bottom d-flex align-items-center justify-content-center">
                         <a href="signup.html">
@@ -51,7 +66,7 @@ constructor(props){
                         </a>
                     </div>
                 </div>
-          
+
             </>
         )
     }

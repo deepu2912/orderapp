@@ -10,11 +10,10 @@ export default class Routes extends Component {
 
             <Switch>
                 <Route exact path="/" component={Index}></Route>
-                 <Route exact exact path="/getstarted/:rid/:tableid" component={Index}></Route>
+                 <Route  exact path="/getstarted/:rid/:tableid" component={Index}></Route>
                  <Route exact path="/login" component={Login}></Route>
                  <Route exact path="/restuarant" component={Restuarant}></Route>
-                 <Route exact path="/res" component={Restuarant}></Route>
-             
+              
           </Switch> 
         )
     }

@@ -10,7 +10,7 @@ export default class index extends Component {
                         <div className="spinner" /></div>
                 </div>
                 <div className="fixed-bottom d-flex align-items-center justify-content-center">
-                    <Link className="btn btn-block d-flex align-items-center btn-lg btn-warning" to="login">
+                    <Link className="btn btn-block d-flex align-items-center btn-lg btn-warning" to="/login">
                         Get Started <i className="feather-arrow-right ml-auto" />
                     </Link>
                 </div>
