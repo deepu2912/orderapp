@@ -2,6 +2,10 @@
 import React, { Component } from 'react'
 
 export default class Restuarant extends Component {
+    returnhref=(e)=>{
+        e.preventDefault();
+        return false;
+    }
     render() {
         return (
             <div>
@@ -9,7 +13,7 @@ export default class Restuarant extends Component {
                     <div className="osahan-restaurant-detail">
                         <div className="p-3">
                             <div className="forgot-page">
-                                <a className="toggle toggle-2" href="#"><span /></a>
+                                <a className="toggle toggle-2" href="2132" onClick={this.returnhref} ><span /></a>
                                 {/* <a className="text-primary font-weight-bold" href="home.html"><i className="feather-chevron-left" /> Back</a> */}
                             </div>
                             <div className="pt-3">
@@ -57,13 +61,13 @@ export default class Restuarant extends Component {
                                 <div className="osahan-slider-item px-1 py-3">
                                     <div className="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
                                         <div className="list-card-image">
-                                            <a href="#">
+                                            <a href="2132" onClick={this.returnhref}>
                                                 <img src="img/trending1.png"  alt="no" className="img-fluid item-img w-100" />
                                             </a>
                                         </div>
                                         <div className="p-3 position-relative">
                                             <div className="list-card-body">
-                                                <h6 className="mb-1"><a href="#" className="text-black">Honey Chilly Potato</a>
+                                                <h6 className="mb-1"><a  href="2132" onClick={this.returnhref} className="text-black">Honey Chilly Potato</a>
                                                 </h6>
                                                 <p className="text-gray mb-3">Vegetarian • Indian • Pure veg</p>
                                                 <p className="text-gray m-0"> <span className="text-black-50"> $350</span></p>
@@ -78,17 +82,17 @@ export default class Restuarant extends Component {
                                 <div className="osahan-slider-item px-1 py-3">
                                     <div className="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
                                         <div className="list-card-image">
-                                            <a href="#">
+                                            <a  href="2132" onClick={this.returnhref}>
                                                 <img src="img/trending2.png" alt="no" className="img-fluid item-img w-100" />
                                             </a>
                                         </div>
                                         <div className="p-3 position-relative">
                                             <div className="list-card-body">
-                                                <h6 className="mb-1"><a href="#" className="text-black">Thai Famous Cuisine</a></h6>
+                                                <h6 className="mb-1"><a  href="2132" onClick={this.returnhref} className="text-black">Thai Famous Cuisine</a></h6>
                                                 <p className="text-gray mb-3">North Indian • Indian • Pure veg</p>
                                                 <p className="text-gray m-0"> <span className="text-black-50"> $250</span></p>
-                                                <span class="float-right">
-                                                    <button class="btn btn-outline-secondary btn-sm">ADD</button>
+                                                <span className="float-right">
+                                                    <button className="btn btn-outline-secondary btn-sm">ADD</button>
                                                     {/* <a href="checkout.html" ></a> */}
                                                 </span>
                                             </div>
@@ -98,17 +102,17 @@ export default class Restuarant extends Component {
                                 <div className="osahan-slider-item px-1 py-3">
                                     <div className="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
                                         <div className="list-card-image">
-                                            <a href="#">
+                                            <a  href="2132" onClick={this.returnhref}>
                                                 <img src="img/trending3.png" alt="no" className="img-fluid item-img w-100" />
                                             </a>
                                         </div>
                                         <div className="p-3 position-relative">
                                             <div className="list-card-body">
-                                                <h6 className="mb-1"><a href="#" className="text-black">The osahan Restaurant</a></h6>
+                                                <h6 className="mb-1"><a  href="2132" onClick={this.returnhref} className="text-black">The osahan Restaurant</a></h6>
                                                 <p className="text-gray mb-3">North • Hamburgers • Pure veg</p>
                                                 <p className="text-gray m-0"> <span className="text-black-50"> $500</span></p>
-                                                <span class="float-right">
-                                                    <button class="btn btn-outline-secondary btn-sm">ADD</button>
+                                                <span className="float-right">
+                                                    <button className="btn btn-outline-secondary btn-sm">ADD</button>
                                                     {/* <a href="checkout.html" ></a> */}
                                                 </span>
                                             </div>
@@ -121,7 +125,7 @@ export default class Restuarant extends Component {
                     <div className="px-3 pt-3">
                         <div className="d-flex item-aligns-center">
                             <p className="font-weight-bold">Menu</p>
-                            {/* <a className="small text-primary font-weight-bold ml-auto" href="#">View all <i className="feather-chevrons-right" /></a> */}
+                            {/* <a className="small text-primary font-weight-bold ml-auto"  href="2132" onClick={this.returnhref}>View all <i className="feather-chevrons-right" /></a> */}
                         </div>
                         <div className="row">
                             <h6 className="mb-4 mt-3 col-md-12">Quick Bites <small className="text-black-50">3 ITEMS</small></h6>
@@ -341,11 +345,11 @@ export default class Restuarant extends Component {
                                     <div className="graph-star-rating-footer text-center mt-3"><button type="button" className="btn btn-primary btn-block btn-sm">Rate and Review</button></div>
                                 </div>
                                 <div className="bg-white rounded shadow-sm p-3 mb-3 restaurant-detailed-ratings-and-reviews">
-                                    <a className="text-primary float-right" href="#">Top Rated</a>
+                                    <a className="text-primary float-right"  href="2132" onClick={this.returnhref}>Top Rated</a>
                                     <h6 className="mb-1">All Ratings and Reviews</h6>
                                     <div className="reviews-members py-3">
                                         <div className="media">
-                                            <a href="#">
+                                            <a  href="2132" onClick={this.returnhref}>
                                                 <img src="img/reviewer1.png" alt="no" className="mr-3 rounded-pill" /></a>
                                             <div className="media-body">
                                                 <div className="reviews-members-header">
@@ -357,19 +361,19 @@ export default class Restuarant extends Component {
                                                             <i className="feather-star" />
                                                         </div>
                                                     </div>
-                                                    <h6 className="mb-0"><a className="text-dark" href="#">Trump</a></h6>
+                                                    <h6 className="mb-0"><a className="text-dark"  href="2132" onClick={this.returnhref}>Trump</a></h6>
                                                     <p className="text-muted small">Tue, 20 Mar 2020</p>
                                                 </div>
                                                 <div className="reviews-members-body">
                                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature from 45 BC, making it over 2000 years old.</p>
                                                 </div>
-                                                <div className="reviews-members-footer"><a className="total-like btn btn-sm btn-outline-primary" href="#"><i className="feather-thumbs-up" /> 856M</a> <a className="total-like btn btn-sm btn-outline-primary" href="#"><i className="feather-thumbs-down" /> 158K</a><span className="total-like-user-main ml-2" dir="rtl"><a href="#" aria-describedby="tooltip-top0">
+                                                <div className="reviews-members-footer"><a className="total-like btn btn-sm btn-outline-primary"  href="2132" onClick={this.returnhref}><i className="feather-thumbs-up" /> 856M</a> <a className="total-like btn btn-sm btn-outline-primary"  href="2132" onClick={this.returnhref}><i className="feather-thumbs-down" /> 158K</a><span className="total-like-user-main ml-2" dir="rtl"><a  href="2132" onClick={this.returnhref} aria-describedby="tooltip-top0">
                                                     <img src="img/reviewer3.png" alt="no" className="total-like-user rounded-pill" /></a>
-                                                    <a href="#" aria-describedby="tooltip-top1">
+                                                    <a  href="2132" onClick={this.returnhref} aria-describedby="tooltip-top1">
                                                         <img src="img/reviewer4.png" alt="no" className="total-like-user rounded-pill" /></a>
-                                                    <a href="#">
+                                                    <a  href="2132" onClick={this.returnhref}>
                                                         <img src="img/reviewer5.png" alt="no" className="total-like-user rounded-pill" /></a>
-                                                    <a href="#" aria-describedby="tooltip-top3">
+                                                    <a  href="2132" onClick={this.returnhref} aria-describedby="tooltip-top3">
                                                         <img src="img/reviewer6.png" alt="no" className="total-like-user rounded-pill" /></a>
                                                 </span></div>
                                             </div>
@@ -378,7 +382,7 @@ export default class Restuarant extends Component {
                                     <hr />
                                     <div className="reviews-members py-3">
                                         <div className="media">
-                                            <a href="#"><img src="img/reviewer2.png"  alt="no" className="mr-3 rounded-pill" /></a>
+                                            <a  href="2132" onClick={this.returnhref}><img src="img/reviewer2.png"  alt="no" className="mr-3 rounded-pill" /></a>
                                             <div className="media-body">
                                                 <div className="reviews-members-header">
                                                     <div className="star-rating float-right">
@@ -396,21 +400,21 @@ export default class Restuarant extends Component {
                                                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                                 </div>
                                                 <div className="reviews-members-footer">
-                                                    <a className="total-like btn btn-sm btn-outline-primary" href="#">
+                                                    <a className="total-like btn btn-sm btn-outline-primary"  href="2132" onClick={this.returnhref}>
                                                         <i className="feather-thumbs-up" /> 88K</a>
-                                                    <a className="total-like btn btn-sm btn-outline-primary" href="#">
+                                                    <a className="total-like btn btn-sm btn-outline-primary"  href="2132" onClick={this.returnhref}>
                                                         <i className="feather-thumbs-down" /> 1K</a>
                                                     <span className="total-like-user-main ml-2" dir="rtl">
-                                                        <a href="#"><img src="img/reviewer3.png" alt="no" className="total-like-user rounded-pill" /></a>
-                                                        <a href="#"><img src="img/reviewer4.png" alt="no" className="total-like-user rounded-pill" /></a>
-                                                        <a href="#"><img src="img/reviewer5.png" alt="no" className="total-like-user rounded-pill" /></a>
-                                                        <a href="#"><img src="img/reviewer6.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                        <a  href="2132" onClick={this.returnhref}><img src="img/reviewer3.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                        <a  href="2132" onClick={this.returnhref}><img src="img/reviewer4.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                        <a  href="2132" onClick={this.returnhref}><img src="img/reviewer5.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                        <a  href="2132" onClick={this.returnhref}><img src="img/reviewer6.png" alt="no" className="total-like-user rounded-pill" /></a>
                                                     </span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <hr />
-                                    <a className="text-center w-100 d-block mt-3 font-weight-bold" href="#">See All Reviews</a>
+                                    <a className="text-center w-100 d-block mt-3 font-weight-bold"  href="2132" onClick={this.returnhref}>See All Reviews</a>
                                 </div>
                                 <div className="bg-white rounded shadow-sm p-3 rating-review-select-page">
                                     <h6 className="mb-3">Leave Comment</h6>
@@ -475,7 +479,7 @@ export default class Restuarant extends Component {
                         </li><li><a href="landing.html"><i className="feather-layers mr-2" /> Landing</a>
                         </li><li><a href="home.html"><i className="feather-home mr-2" /> Homepage</a></li>
                         <li>
-                            <a href="#"><i className="feather-edit-2 mr-2" /> Authentication</a>
+                            <a  href="2132" onClick={this.returnhref}><i className="feather-edit-2 mr-2" /> Authentication</a>
                             <ul>
                                 <li><a href="login.html">Login</a>
                                 </li><li><a href="signup.html">Register</a>
@@ -493,14 +497,14 @@ export default class Restuarant extends Component {
                         </li><li><a href="map.html"><i className="feather-map-pin mr-2" /> Live Map</a>
                         </li><li><a href="payment.html"><i className="feather-credit-card mr-2" /> Payment</a>
                         </li><li>
-                            <a href="#"><i className="feather-user mr-2" /> Profile</a>
+                            <a  href="2132" onClick={this.returnhref}><i className="feather-user mr-2" /> Profile</a>
                             <ul>
                                 <li><a href="profile.html">Profile</a></li>
                                 <li><a href="favorites.html">Favorites</a>
                                 </li></ul>
                         </li>
                         <li>
-                            <a href="#"><i className="feather-book mr-2" /> Pages</a>
+                            <a  href="2132" onClick={this.returnhref}><i className="feather-book mr-2" /> Pages</a>
                             <ul>
                                 <li><a href="filters.html">Filters</a>
                                 </li><li><a href="terms.html">Terms &amp; conditions</a>
@@ -510,7 +514,7 @@ export default class Restuarant extends Component {
                                 </li></ul>
                         </li>
                         <li>
-                            <a href="#"><i className="feather-alert-triangle mr-2" /> Error</a>
+                            <a  href="2132" onClick={this.returnhref}><i className="feather-alert-triangle mr-2" /> Error</a>
                             <ul>
                                 <li><a href="not-found.html">Not Found</a>
                                 </li><li><a href="maintence.html"> Maintence</a>
@@ -518,35 +522,35 @@ export default class Restuarant extends Component {
                                 </li></ul>
                         </li>
                         <li>
-                            <a href="#"><i className="feather-link mr-2" /> Navigation Link Example</a>
+                            <a  href="2132" onClick={this.returnhref}><i className="feather-link mr-2" /> Navigation Link Example</a>
                             <ul>
                                 <li>
-                                    <a href="#">Link Example 1</a>
+                                    <a  href="2132" onClick={this.returnhref}>Link Example 1</a>
                                     <ul>
                                         <li>
-                                            <a href="#">Link Example 1.1</a>
+                                            <a  href="2132" onClick={this.returnhref}>Link Example 1.1</a>
                                             <ul>
-                                                <li><a href="#">Link</a></li>
-                                                <li><a href="#">Link</a></li>
-                                                <li><a href="#">Link</a></li>
-                                                <li><a href="#">Link</a></li>
-                                                <li><a href="#">Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#">Link Example 1.2</a>
+                                            <a  href="2132" onClick={this.returnhref}>Link Example 1.2</a>
                                             <ul>
-                                                <li><a href="#">Link</a></li>
-                                                <li><a href="#">Link</a></li>
-                                                <li><a href="#">Link</a></li>
-                                                <li><a href="#">Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
+                                                <li><a  href="2132" onClick={this.returnhref}>Link</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Link Example 2</a></li>
-                                <li><a href="#">Link Example 3</a></li>
-                                <li><a href="#">Link Example 4</a></li>
+                                <li><a  href="2132" onClick={this.returnhref}>Link Example 2</a></li>
+                                <li><a  href="2132" onClick={this.returnhref}>Link Example 3</a></li>
+                                <li><a  href="2132" onClick={this.returnhref}>Link Example 4</a></li>
                                 <li data-nav-custom-content>
                                     <div className="custom-message">
                                         You can add any custom content to your navigation items. This text is just an example.

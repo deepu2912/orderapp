@@ -29,7 +29,7 @@ export default class Qrcode extends Component {
             </div>
                
                <div className="row" style={{"float":"right"}}>
-               <a onClick={this.downloadQR} className="btn btn-primary"> Download QR </a>
+               <button onClick={this.downloadQR}  className="btn btn-primary"> Download QR </button>
                </div>
             </div>
                
