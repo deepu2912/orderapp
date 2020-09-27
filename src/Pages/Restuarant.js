@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+ 
 import React, { Component } from 'react'
 
 export default class Restuarant extends Component {
@@ -67,8 +67,8 @@ export default class Restuarant extends Component {
                                                 </h6>
                                                 <p className="text-gray mb-3">Vegetarian • Indian • Pure veg</p>
                                                 <p className="text-gray m-0"> <span className="text-black-50"> $350</span></p>
-                                                <span class="float-right">
-                                                    <button class="btn btn-outline-secondary btn-sm">ADD</button>
+                                                <span className="float-right">
+                                                    <button className="btn btn-outline-secondary btn-sm">ADD</button>
                                                     {/* <a href="checkout.html" ></a> */}
                                                 </span>
                                             </div>
