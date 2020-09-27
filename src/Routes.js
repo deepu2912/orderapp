@@ -11,7 +11,7 @@ export default class Routes extends Component {
         return (
 
             <Switch>
-                 <Route exact path="/" component={Index}></Route>
+                 {/* <Route exact path="/" component={Index}></Route> */}
                  <Route exact path="/getstarted/:rid/:tableid" component={Index}></Route>
                  <Route exact path="/login" component={Login}></Route>
                  <Route exact path="/qrcode" component={Qrcode}></Route>
