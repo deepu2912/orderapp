@@ -6,7 +6,7 @@ export default class index extends Component {
         return (
             <>
                 <div className="bg-primary d-flex align-items-center justify-content-center vh-100 index-page">
-                    <div className="text-center"><a href="login.html"><img src="img/logo.png" alt="" /></a><br />
+                    <div className="text-center"><Link to="/order"><img src="img/logo.png" alt="" /></Link><br />
                         <div className="spinner" /></div>
                 </div>
                 <div className="fixed-bottom d-flex align-items-center justify-content-center">
