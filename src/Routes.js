@@ -12,7 +12,7 @@ export default class Routes extends Component {
 
             <Switch>
                  <Route exact path="/" component={Index}></Route>
-                 <Route  path="/order" component={Index}></Route>
+                 <Route  path="/getstarted/1/1" component={Index}></Route>
                  <Route exact path="/login" component={Login}></Route>
                  <Route exact path="/qrcode" component={Qrcode}></Route>
                  <Route exact path="/restuarant" component={Restuarant}></Route> 
