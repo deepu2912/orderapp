@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
 
 export default class Restuarant extends Component {
@@ -57,7 +58,7 @@ export default class Restuarant extends Component {
                                     <div className="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
                                         <div className="list-card-image">
                                             <a href="#">
-                                                <img src="img/trending1.png" className="img-fluid item-img w-100" />
+                                                <img src="img/trending1.png"  alt="no" className="img-fluid item-img w-100" />
                                             </a>
                                         </div>
                                         <div className="p-3 position-relative">
@@ -78,7 +79,7 @@ export default class Restuarant extends Component {
                                     <div className="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
                                         <div className="list-card-image">
                                             <a href="#">
-                                                <img src="img/trending2.png" className="img-fluid item-img w-100" />
+                                                <img src="img/trending2.png" alt="no" className="img-fluid item-img w-100" />
                                             </a>
                                         </div>
                                         <div className="p-3 position-relative">
@@ -98,7 +99,7 @@ export default class Restuarant extends Component {
                                     <div className="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
                                         <div className="list-card-image">
                                             <a href="#">
-                                                <img src="img/trending3.png" className="img-fluid item-img w-100" />
+                                                <img src="img/trending3.png" alt="no" className="img-fluid item-img w-100" />
                                             </a>
                                         </div>
                                         <div className="p-3 position-relative">
@@ -166,7 +167,7 @@ export default class Restuarant extends Component {
                                     <div className="p-3 border-bottom menu-list">
                                         <span className="float-right"><a href="checkout.html" className="btn btn-outline-secondary btn-sm">ADD</a></span>
                                         <div className="media">
-                                            <img src="img/starter1.jpg" alt="no image" className="mr-3 rounded-pill " />
+                                            <img src="img/starter1.jpg" alt="no" className="mr-3 rounded-pill " />
                                             <div className="media-body">
                                                 <h6 className="mb-1">Chicken Tikka Sub </h6>
                                                 <p className="text-muted mb-0">$250</p>
@@ -176,7 +177,7 @@ export default class Restuarant extends Component {
                                     <div className="p-3 border-bottom menu-list">
                                         <span className="count-number float-right"><button type="button" className="btn-sm left dec btn btn-outline-secondary"> <i className="feather-minus" /> </button><input className="count-number-input" type="text" readOnly defaultValue={1} /><button type="button" className="btn-sm right inc btn btn-outline-secondary"> <i className="feather-plus" /> </button></span>
                                         <div className="media">
-                                            <img src="img/starter2.jpg" alt="no image" className="mr-3 rounded-pill " />
+                                            <img src="img/starter2.jpg" alt="no" className="mr-3 rounded-pill " />
                                             <div className="media-body">
                                                 <h6 className="mb-1">Cheese corn Roll <span className="badge badge-danger">BEST SELLER</span></h6>
                                                 <p className="text-muted mb-0">$600</p>
@@ -186,7 +187,7 @@ export default class Restuarant extends Component {
                                     <div className="p-3 border-bottom menu-list">
                                         <span className="float-right"><a href="checkout.html" className="btn btn-outline-secondary btn-sm">ADD</a></span>
                                         <div className="media">
-                                            <img src="img/starter3.jpg" alt="no image" className="mr-3 rounded-pill " />
+                                            <img src="img/starter3.jpg" alt="no" className="mr-3 rounded-pill " />
                                             <div className="media-body">
                                                 <h6 className="mb-1">Chicken Tikka Sub <span className="badge badge-success">Pure Veg</span></h6>
                                                 <p className="text-muted mb-0">$250</p>
@@ -344,7 +345,8 @@ export default class Restuarant extends Component {
                                     <h6 className="mb-1">All Ratings and Reviews</h6>
                                     <div className="reviews-members py-3">
                                         <div className="media">
-                                            <a href="#"><img src="img/reviewer1.png" className="mr-3 rounded-pill" /></a>
+                                            <a href="#">
+                                                <img src="img/reviewer1.png" alt="no" className="mr-3 rounded-pill" /></a>
                                             <div className="media-body">
                                                 <div className="reviews-members-header">
                                                     <div className="star-rating float-right">
@@ -361,14 +363,22 @@ export default class Restuarant extends Component {
                                                 <div className="reviews-members-body">
                                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classNameical Latin literature from 45 BC, making it over 2000 years old.</p>
                                                 </div>
-                                                <div className="reviews-members-footer"><a className="total-like btn btn-sm btn-outline-primary" href="#"><i className="feather-thumbs-up" /> 856M</a> <a className="total-like btn btn-sm btn-outline-primary" href="#"><i className="feather-thumbs-down" /> 158K</a><span className="total-like-user-main ml-2" dir="rtl"><a href="#" aria-describedby="tooltip-top0"><img src="img/reviewer3.png" className="total-like-user rounded-pill" /></a><a href="#" aria-describedby="tooltip-top1"><img src="img/reviewer4.png" className="total-like-user rounded-pill" /></a><a href="#"><img src="img/reviewer5.png" className="total-like-user rounded-pill" /></a><a href="#" aria-describedby="tooltip-top3"><img src="img/reviewer6.png" className="total-like-user rounded-pill" /></a></span></div>
+                                                <div className="reviews-members-footer"><a className="total-like btn btn-sm btn-outline-primary" href="#"><i className="feather-thumbs-up" /> 856M</a> <a className="total-like btn btn-sm btn-outline-primary" href="#"><i className="feather-thumbs-down" /> 158K</a><span className="total-like-user-main ml-2" dir="rtl"><a href="#" aria-describedby="tooltip-top0">
+                                                    <img src="img/reviewer3.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                    <a href="#" aria-describedby="tooltip-top1">
+                                                        <img src="img/reviewer4.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                    <a href="#">
+                                                        <img src="img/reviewer5.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                    <a href="#" aria-describedby="tooltip-top3">
+                                                        <img src="img/reviewer6.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                </span></div>
                                             </div>
                                         </div>
                                     </div>
                                     <hr />
                                     <div className="reviews-members py-3">
                                         <div className="media">
-                                            <a href="#"><img src="img/reviewer2.png" className="mr-3 rounded-pill" /></a>
+                                            <a href="#"><img src="img/reviewer2.png"  alt="no" className="mr-3 rounded-pill" /></a>
                                             <div className="media-body">
                                                 <div className="reviews-members-header">
                                                     <div className="star-rating float-right">
@@ -379,13 +389,23 @@ export default class Restuarant extends Component {
                                                             <i className="feather-star" />
                                                         </div>
                                                     </div>
-                                                    <h6 className="mb-0"><a className="text-dark" href="#">Jhon Smith</a></h6>
+                                                    <h6 className="mb-0"><a className="text-dark" href="1" >Jhon Smith</a></h6>
                                                     <p className="text-muted small">Tue, 20 Mar 2020</p>
                                                 </div>
                                                 <div className="reviews-members-body">
                                                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                                 </div>
-                                                <div className="reviews-members-footer"><a className="total-like btn btn-sm btn-outline-primary" href="#"><i className="feather-thumbs-up" /> 88K</a> <a className="total-like btn btn-sm btn-outline-primary" href="#"><i className="feather-thumbs-down" /> 1K</a><span className="total-like-user-main ml-2" dir="rtl"><a href="#"><img src="img/reviewer3.png" className="total-like-user rounded-pill" /></a><a href="#"><img src="img/reviewer4.png" className="total-like-user rounded-pill" /></a><a href="#"><img src="img/reviewer5.png" className="total-like-user rounded-pill" /></a><a href="#"><img src="img/reviewer6.png" className="total-like-user rounded-pill" /></a></span></div>
+                                                <div className="reviews-members-footer">
+                                                    <a className="total-like btn btn-sm btn-outline-primary" href="#">
+                                                        <i className="feather-thumbs-up" /> 88K</a>
+                                                    <a className="total-like btn btn-sm btn-outline-primary" href="#">
+                                                        <i className="feather-thumbs-down" /> 1K</a>
+                                                    <span className="total-like-user-main ml-2" dir="rtl">
+                                                        <a href="#"><img src="img/reviewer3.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                        <a href="#"><img src="img/reviewer4.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                        <a href="#"><img src="img/reviewer5.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                        <a href="#"><img src="img/reviewer6.png" alt="no" className="total-like-user rounded-pill" /></a>
+                                                    </span></div>
                                             </div>
                                         </div>
                                     </div>
